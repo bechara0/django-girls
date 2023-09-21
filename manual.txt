@@ -1,0 +1,32 @@
+**virtualenv**
+virtualenv myenv
+.\myenv\Script\activate
+
+**iniciar proyecto**
+django-admin startproject mysite
+
+** Modificar setings.py**
+LANGUAGE_CODE = 'es-es'
+TIME_ZONE = 'America/Argentina/Buenos_Aires'
+
+STATIC_URL = "static/"
+STATIC_ROOT = BASE_DIR / "static"
+
+ALLOWED_HOSTS = ['127.0.0.1', '.pythonanywhere.com']
+
+** Crear BD **
+python manage.py migrate
+
+** iniciar server **
+python manage.py runserver
+
+** crear App **
+python manage.py startapp blog
+agregar la app al settings.py
+
+** Models **
+trabajar en models.py de la app
+luego en admin de la app
+
+** crear usuario**
+python manage.py createsuperuser
